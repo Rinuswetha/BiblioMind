@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><title>Finding Match...</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body class="lavender-bg">
+  <main class="center-card loading-card">
+    <h2 class="qtitle">Finding your perfect book match…</h2>
+    <div class="loading-area">
+      <div class="floating-icons">
+        <div class="icon">📖</div>
+        <div class="icon">☕</div>
+        <div class="icon">✨</div>
+        <div class="icon">💡</div>
+        <div class="icon">🌙</div>
+      </div>
+      <div class="loader"></div>
+    </div>
+    <p class="muted">Gathering vibes, aligning with lavender energy...</p>
+  </main>
+
+<script>
+  // Redirect after short delay to result
+  setTimeout(() => window.location.href = "{{ url_for('result') }}", 3000);
+</script>
+</body>
+</html>

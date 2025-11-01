@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>BiblioMind — Welcome</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body class="lavender-bg">
+  <main class="center-card">
+    <div class="hero">
+      <svg width="120" height="120" viewBox="0 0 24 24" fill="none" class="logo">
+        <rect rx="6" width="24" height="24" fill="#F3E8FF"/>
+        <path d="M6 7c2-1 4-1 6 0 2-1 4-1 6 0v8c-2-1-4-1-6 0-2-1-4-1-6 0V7Z" fill="#CFA7E3"/>
+      </svg>
+    </div>
+    <h1 class="title">Welcome to <span class="accent">BiblioMind</span></h1>
+    <p class="lead">Discover books that match your personality. Lavender, calm, and curated.</p>
+
+    <form action="{{ url_for('q1') }}" method="post">
+      <label class="sr-only" for="name">Your name</label>
+      <input id="name" name="name" class="input name-input" placeholder="Your name (optional)"/>
+      <button class="btn primary">Start Quiz</button>
+    </form>
+
+    <p class="tiny muted">8-step aesthetic quiz • Pastel lavender theme</p>
+  </main>
+</body>
+</html>

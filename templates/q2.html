@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Q2 — BiblioMind</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"></head>
+<body class="lavender-bg">
+  <main class="center-card card-quiz">
+    <h2 class="qtitle">2. Pick a setting you’d love to read about:</h2>
+    <form method="post">
+      <div class="options-grid">
+        <button name="choice" value="A" class="option opt-pink">
+          <strong>A</strong><div class="opt-text">A cozy café or romantic city</div>
+        </button>
+
+        <button name="choice" value="B" class="option opt-blue">
+          <strong>B</strong><div class="opt-text">A dark city with secrets</div>
+        </button>
+
+        <button name="choice" value="C" class="option opt-green">
+          <strong>C</strong><div class="opt-text">A magical or mythical world</div>
+        </button>
+
+        <button name="choice" value="D" class="option opt-peach">
+          <strong>D</strong><div class="opt-text">Practical life lessons or motivational stories</div>
+        </button>
+      </div>
+    </form>
+    <a class="nav-link" href="{{ url_for('q1') }}">Back</a>
+  </main>
+</body>
+</html>

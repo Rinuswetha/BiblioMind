@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Q5 — BiblioMind</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"></head>
+<body class="lavender-bg">
+  <main class="center-card card-quiz">
+    <h2 class="qtitle">5. What kind of ending do you love most?</h2>
+    <form method="post">
+      <div class="options-grid">
+        <button name="choice" value="A" class="option opt-pink"><strong>A</strong><div class="opt-text">Bittersweet, thoughtful</div></button>
+        <button name="choice" value="B" class="option opt-blue"><strong>B</strong><div class="opt-text">Twist that shocks you</div></button>
+        <button name="choice" value="C" class="option opt-green"><strong>C</strong><div class="opt-text">Open and wonder-filled</div></button>
+        <button name="choice" value="D" class="option opt-peach"><strong>D</strong><div class="opt-text">Clear lessons and closure</div></button>
+      </div>
+    </form>
+    <a class="nav-link" href="{{ url_for('q4') }}">Back</a>
+  </main>
+</body>
+</html>

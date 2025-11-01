@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Q4 — BiblioMind</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"></head>
+<body class="lavender-bg">
+  <main class="center-card card-quiz">
+    <h2 class="qtitle">4. Your preferred pace of a story?</h2>
+    <form method="post">
+      <div class="options-grid">
+        <button name="choice" value="A" class="option opt-pink"><strong>A</strong><div class="opt-text">Slow and emotional</div></button>
+        <button name="choice" value="B" class="option opt-blue"><strong>B</strong><div class="opt-text">Fast and intense</div></button>
+        <button name="choice" value="C" class="option opt-green"><strong>C</strong><div class="opt-text">Adventurous and imaginative</div></button>
+        <button name="choice" value="D" class="option opt-peach"><strong>D</strong><div class="opt-text">Informative and inspiring</div></button>
+      </div>
+    </form>
+    <a class="nav-link" href="{{ url_for('q3') }}">Back</a>
+  </main>
+</body>
+</html>

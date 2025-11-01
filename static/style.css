@@ -1,0 +1,52 @@
+/* Base + fonts (Poppins recommended) */
+*{box-sizing:border-box}
+body, input, button { font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Arial; }
+body { margin:0; min-height:100vh; background: linear-gradient(135deg, #F7F5FF, #F2F0FF); color:#3b2f3b; }
+
+/* center layout */
+.center-card { width: min(760px, 94%); margin: 48px auto; padding: 28px; border-radius: 18px; background: rgba(255,255,255,0.9); box-shadow: 0 12px 40px rgba(120,100,140,0.08); text-align:center; }
+
+/* hero */
+.logo { margin: 0 auto 8px; display:block; }
+.title { font-size:26px; margin:8px 0; color:#5f3b5f; }
+.lead { color:#6f5f6f; margin:8px 0 18px; font-size:15px; }
+.muted { color:#8b7b8b; }
+
+/* name input and primary button */
+.input { padding:12px; border-radius:12px; border:1px solid rgba(150,120,150,0.06); width:60%; }
+.name-input { padding:12px 14px; width:70%; margin-bottom:12px; border-radius:10px; border:1px solid #E6E0F0; background:#fff; }
+.btn { padding:10px 18px; border-radius:12px; border:none; cursor:pointer; font-weight:700; }
+.btn.primary { background: linear-gradient(90deg,#EFCDF4,#D6C2ED); color:#43233b; box-shadow: 0 8px 18px rgba(198,148,177,0.12); margin-top:6px; }
+.btn.ghost { background:transparent; border:1px solid rgba(140,110,140,0.08); color:#5c3f5c; padding:10px 16px; }
+
+/* quiz card specifics */
+.card-quiz { padding:28px; }
+.qtitle { font-size:18px; margin-bottom:16px; color:#5c3f5c; }
+
+/* options grid */
+.options-grid { display:grid; grid-template-columns: repeat(2, 1fr); gap:14px; align-items:stretch; }
+.option {
+  display:flex; flex-direction:column; align-items:flex-start; gap:8px;
+  padding:16px; border-radius:12px; border: 1px solid rgba(150,120,150,0.06);
+  background: linear-gradient(180deg,#fff,#fffafc); cursor:pointer; transition: transform .18s ease, box-shadow .18s ease;
+  text-align:left;
+}
+.option strong { font-size:18px; display:block; color:#5c3f5c; margin-bottom:6px; }
+.opt-text { color:#6b526b; font-size:14px; }
+
+/* pastel option colors */
+.opt-pink { background: linear-gradient(180deg,#FDE8F2,#FADADD); }
+.opt-blue { background: linear-gradient(180deg,#EAF6FF,#DFF4FF); }
+.opt-green { background: linear-gradient(180deg,#E8FFF2,#DFFFEA); }
+.opt-peach { background: linear-gradient(180deg,#FFF1E6,#FFE6D1); }
+
+.option:hover { transform: translateY(-6px); box-shadow: 0 14px 30px rgba(150,110,140,0.08); }
+
+/* small elements */
+.nav-link { display:block; margin-top:14px; color:#7d5f7d; font-size:13px; text-decoration:none; }
+.tiny { font-size:12px; color:#a390a3; margin-top:8px; }
+
+/* loading visuals */
+.loading-card { padding:36px; }
+.loading-area { display:flex; flex-direction:column; align-items:center; gap:18px; margin-top:10px; }
+.loader { width:72px; height:72px; border-radius:50%; background: conic-gradient(#D6C2ED 25%, #FDE8F2 25% 50%, #DFF4FF 50% 75%, #E8FFF2 

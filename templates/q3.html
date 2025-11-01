@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Q3 — BiblioMind</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"></head>
+<body class="lavender-bg">
+  <main class="center-card card-quiz">
+    <h2 class="qtitle">3. Which word resonates most with you?</h2>
+    <form method="post">
+      <div class="options-grid">
+        <button name="choice" value="A" class="option opt-pink"><strong>A</strong><div class="opt-text">Love</div></button>
+        <button name="choice" value="B" class="option opt-blue"><strong>B</strong><div class="opt-text">Suspense</div></button>
+        <button name="choice" value="C" class="option opt-green"><strong>C</strong><div class="opt-text">Magic</div></button>
+        <button name="choice" value="D" class="option opt-peach"><strong>D</strong><div class="opt-text">Growth</div></button>
+      </div>
+    </form>
+    <a class="nav-link" href="{{ url_for('q2') }}">Back</a>
+  </main>
+</body>
+</html>

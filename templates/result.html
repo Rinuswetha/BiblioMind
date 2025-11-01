@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Your Match — BiblioMind</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"></head>
+<body class="lavender-bg">
+  <main class="center-card result-card">
+    <h2 class="title">✨ Your Book Match, {{ name }} ✨</h2>
+    <p class="lead muted">Based on your answers ({{ answers|length }}), we think you'll love:</p>
+
+    <div class="recommendation">
+      <div class="genre-pill">{{ genre }}</div>
+      <ul class="book-list">
+        {% for b in curated %}
+          <li class="book-item">{{ b }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <p class="muted">Thanks for taking BiblioMind — happy reading!</p>
+
+    <div class="actions">
+      <a class="btn ghost" href="{{ url_for('welcome') }}">Back to Home</a>
+      <a class="btn primary" href="{{ url_for('q1') }}">Try Again</a>
+    </div>
+  </main>
+</body>
+</html>
